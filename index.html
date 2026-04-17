@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APlasticBag — Custom Printed Paper Bags & Packaging</title>
+  <meta name="description" content="Wholesale custom printed paper bags & packaging for retail, food, and gift. Fast turnaround, low minimums, eco-friendly options." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What is the minimum order quantity for custom printed paper bags?","acceptedAnswer":{"@type":"Answer","text":"Our minimum is 100 bags for most styles, with significant volume discounts starting at 500, 1,000, and 5,000 units."}},
+    {"@type":"Question","name":"How long does production and shipping take?","acceptedAnswer":{"@type":"Answer","text":"Standard production runs 5–7 business days after artwork approval. Rush options as fast as 48 hours are available."}},
+    {"@type":"Question","name":"Are your paper bags eco-friendly and recyclable?","acceptedAnswer":{"@type":"Answer","text":"Yes. All of our paper bags are 100% recyclable, and most are made from FSC-certified or post-consumer recycled material."}},
+    {"@type":"Question","name":"Can I get a sample before placing a bulk order?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We offer free blank samples and low-cost printed samples."}},
+    {"@type":"Question","name":"What sizes and handle styles can I choose from?","acceptedAnswer":{"@type":"Answer","text":"30+ stock sizes and twisted, flat, rope, ribbon, and die-cut handle options. Fully custom sizes available on bulk orders."}}
+  ]}
+  </script>
+</head>
+<body>
+
+<!-- Promo Bar -->
+<div class="promo-bar">
+  <div class="container">
+    <div class="promo-left">
+      <span><svg class="ic" viewBox="0 0 24 24"><path d="M3 7h13v8H3zM16 10h3l2 3v2h-5z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="7" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"/></svg> Free shipping on orders $499+</span>
+      <span><svg class="ic" viewBox="0 0 24 24"><path d="M5 19L19 5M8 8h.01M16 16h.01" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg> Save up to 25% on bulk orders</span>
+    </div>
+    <div class="promo-right">
+      <a href="tel:18005551234"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg> 1-800-555-1234</a>
+      <span class="sep">|</span>
+      <a href="#">Track Order</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <div class="logo-mark">A</div>
+      <div>
+        <div class="logo-name">APlasticBag</div>
+        <div class="logo-tag">Custom Paper Packaging</div>
+      </div>
+    </a>
+
+    <div class="search">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="Search paper bags, sizes, styles..." />
+    </div>
+
+    <div class="header-actions">
+      <button class="btn btn-ghost hide-md">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        Account
+      </button>
+      <button class="btn btn-primary hide-md">Get a Quote</button>
+      <button class="icon-btn cart">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12zM6 6L5 3H2M9 21a1 1 0 100-2 1 1 0 000 2zm9 0a1 1 0 100-2 1 1 0 000 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="badge">0</span>
+      </button>
+      <button class="icon-btn show-lg-none" id="mobileToggle" aria-label="Menu">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-row container hide-lg-none">
+    <ul class="nav-list" id="navList">
+      <li><a href="#">Home</a></li>
+      <li class="has-menu" data-menu="products">
+        <a href="#">Products
+          <svg class="ic-sm" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#" class="link-primary">Today's Deals</a>
+      <a href="#" class="link-muted">Samples</a>
+      <a href="#" class="link-muted">Help</a>
+    </div>
+
+    <!-- Mega Menu -->
+    <div class="mega" id="megaProducts">
+      <div class="container mega-inner">
+        <div class="mega-col">
+          <h4>By Type</h4>
+          <ul>
+            <li><a href="#">Kraft Paper Bags</a></li>
+            <li><a href="#">White Paper Bags</a></li>
+            <li><a href="#">Black Paper Bags</a></li>
+            <li><a href="#">Eurototes</a></li>
+            <li><a href="#">Merchandise Bags</a></li>
+            <li><a href="#">Wine & Bottle Bags</a></li>
+          </ul>
+        </div>
+        <div class="mega-col">
+          <h4>By Use</h4>
+          <ul>
+            <li><a href="#">Retail Shopping</a></li>
+            <li><a href="#">Food Takeout</a></li>
+            <li><a href="#">Gift & Boutique</a></li>
+            <li><a href="#">Grocery</a></li>
+            <li><a href="#">Trade Shows</a></li>
+            <li><a href="#">Promotional</a></li>
+          </ul>
+        </div>
+        <div class="mega-col">
+          <h4>By Handle</h4>
+          <ul>
+            <li><a href="#">Twisted Handle</a></li>
+            <li><a href="#">Flat Handle</a></li>
+            <li><a href="#">Rope Handle</a></li>
+            <li><a href="#">Ribbon Handle</a></li>
+            <li><a href="#">Die-Cut Handle</a></li>
+            <li><a href="#">No Handle</a></li>
+          </ul>
+        </div>
+        <div class="mega-col mega-icons">
+          <h4>Popular Categories</h4>
+          <div class="icon-grid">
+            <a href="#"><span class="ig-icon">🛍️</span><span>Retail</span></a>
+            <a href="#"><span class="ig-icon">🍽️</span><span>Food Service</span></a>
+            <a href="#"><span class="ig-icon">🎁</span><span>Gift</span></a>
+            <a href="#"><span class="ig-icon">🌿</span><span>Eco-Friendly</span></a>
+            <a href="#"><span class="ig-icon">✨</span><span>Luxury</span></a>
+            <a href="#"><span class="ig-icon">🏬</span><span>Wholesale</span></a>
+          </div>
+        </div>
+        <a href="#" class="mega-feature">
+          <img src="assets/bag-kraft.jpg" alt="Kraft bags" />
+          <div class="mega-feature-body">
+            <div class="eyebrow">New Arrivals</div>
+            <div class="mf-title">Eco Kraft Collection</div>
+            <div class="mf-sub">100% recycled, low minimums</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <div class="container">
+      <div class="search mb">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" placeholder="Search..." />
+      </div>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Resources</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <button class="btn btn-primary full">Get a Quote</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill"><span class="dot"></span> Trusted by 10,000+ businesses</span>
+      <h1>Custom Printed Paper Bags<br /><span class="text-primary">Made Simple.</span></h1>
+      <p class="lead">Premium kraft, white, and luxury paper bags — printed with your brand, shipped fast, with low minimums and unbeatable wholesale pricing.</p>
+      <ul class="check-list">
+        <li><span class="ck">✓</span> Low minimums (100+)</li>
+        <li><span class="ck">✓</span> 5–7 day production</li>
+        <li><span class="ck">✓</span> Free design support</li>
+        <li><span class="ck">✓</span> Eco-friendly options</li>
+      </ul>
+      <div class="hero-cta">
+        <button class="btn btn-primary lg">Shop Paper Bags →</button>
+        <button class="btn btn-outline lg">Request Free Samples</button>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="hero-img"><img src="assets/hero-paper-bag.jpg" alt="Premium custom kraft paper shopping bag" /></div>
+      <div class="hero-tag">
+        <div class="hero-tag-num">25%</div>
+        <div class="hero-tag-sub">Bulk discount<br/>on 1,000+ bags</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Value Props -->
+<section class="values">
+  <div class="container values-grid">
+    <div class="value"><div class="value-ic">🚚</div><div><div class="vt">Fast Turnaround</div><div class="vd">5–7 day production on most orders</div></div></div>
+    <div class="value"><div class="value-ic">🎨</div><div><div class="vt">Free Design Help</div><div class="vd">Pro designers review every order</div></div></div>
+    <div class="value"><div class="value-ic">🌿</div><div><div class="vt">Eco-Friendly</div><div class="vd">Recycled & compostable options</div></div></div>
+    <div class="value"><div class="value-ic">🎧</div><div><div class="vt">Real Support</div><div class="vd">Talk to a packaging expert today</div></div></div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Shop by Category</div>
+        <h2>Find the right bag for your brand</h2>
+      </div>
+      <a href="#" class="link-arrow">View all categories →</a>
+    </div>
+    <div class="cat-grid">
+      <a href="#" class="cat"><div class="cat-img"><img src="assets/bag-kraft.jpg" alt="Kraft Paper Bags"/></div><h3>Kraft Paper Bags</h3><div class="cat-meta"><span>120+ styles</span><span>From <strong>$0.18</strong></span></div></a>
+      <a href="#" class="cat"><div class="cat-img"><img src="assets/bag-white.jpg" alt="White Paper Bags"/></div><h3>White Paper Bags</h3><div class="cat-meta"><span>80+ styles</span><span>From <strong>$0.22</strong></span></div></a>
+      <a href="#" class="cat"><div class="cat-img"><img src="assets/bag-black.jpg" alt="Luxury Bags"/></div><h3>Luxury & Boutique</h3><div class="cat-meta"><span>60+ styles</span><span>From <strong>$0.45</strong></span></div></a>
+      <a href="#" class="cat"><div class="cat-img"><img src="assets/bag-food.jpg" alt="Food Service Bags"/></div><h3>Food Service Bags</h3><div class="cat-meta"><span>90+ styles</span><span>From <strong>$0.15</strong></span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Featured</div>
+        <h2>Popular paper bags this week</h2>
+      </div>
+      <a href="#" class="link-arrow">Shop all →</a>
+    </div>
+    <div class="prod-grid">
+      <a href="#" class="prod">
+        <div class="prod-img"><img src="assets/bag-kraft.jpg" alt="Classic Kraft Shopper"/><span class="prod-badge">Bestseller</span></div>
+        <div class="prod-body"><div class="rating">★ 4.9 <span>(248)</span></div><h3>Classic Kraft Shopper</h3><div class="price"><strong>$0.24</strong> <span>/ bag</span><span class="was">$0.32</span></div></div>
+      </a>
+      <a href="#" class="prod">
+        <div class="prod-img"><img src="assets/bag-white.jpg" alt="White Gloss Eurototes"/><span class="prod-badge">New</span></div>
+        <div class="prod-body"><div class="rating">★ 4.8 <span>(248)</span></div><h3>White Gloss Eurototes</h3><div class="price"><strong>$0.38</strong> <span>/ bag</span></div></div>
+      </a>
+      <a href="#" class="prod">
+        <div class="prod-img"><img src="assets/bag-black.jpg" alt="Matte Black Boutique Bag"/></div>
+        <div class="prod-body"><div class="rating">★ 5.0 <span>(248)</span></div><h3>Matte Black Boutique Bag</h3><div class="price"><strong>$0.59</strong> <span>/ bag</span></div></div>
+      </a>
+      <a href="#" class="prod">
+        <div class="prod-img"><img src="assets/bag-food.jpg" alt="Printed Food Takeout Bag"/><span class="prod-badge">Popular</span></div>
+        <div class="prod-body"><div class="rating">★ 4.7 <span>(248)</span></div><h3>Printed Food Takeout Bag</h3><div class="price"><strong>$0.21</strong> <span>/ bag</span></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Promo Banner -->
+<section class="container promo-section">
+  <div class="promo-grid">
+    <div class="promo-card promo-dark">
+      <div class="promo-card-body">
+        <div class="eyebrow eyebrow-light">Limited Time</div>
+        <h3>Save 25% on<br/>wholesale orders</h3>
+        <p>Order 1,000+ custom printed paper bags and unlock our deepest bulk discounts.</p>
+        <button class="btn btn-primary">Shop the Deal →</button>
+      </div>
+    </div>
+    <div class="promo-card promo-light">
+      <div class="eyebrow">Need a custom quote?</div>
+      <h3>Talk to a packaging expert</h3>
+      <p>Get pricing tailored to your size, quantity, print, and timeline. Real humans, fast replies.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary">Get a Quote</button>
+        <button class="btn btn-outline">Request Samples</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container faq-inner">
+    <div class="faq-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>Frequently asked questions</h2>
+      <p>Quick answers to the most common questions about our custom paper bags.</p>
+    </div>
+    <div class="faq" id="faq">
+      <div class="faq-item"><button class="faq-q">What is the minimum order quantity for custom printed paper bags?<span class="chev">+</span></button><div class="faq-a">Our minimum is 100 bags for most styles, with significant volume discounts starting at 500, 1,000, and 5,000 units.</div></div>
+      <div class="faq-item"><button class="faq-q">How long does production and shipping take?<span class="chev">+</span></button><div class="faq-a">Standard production runs 5–7 business days after artwork approval. Rush options as fast as 48 hours are available. Ground shipping adds 2–5 days.</div></div>
+      <div class="faq-item"><button class="faq-q">Are your paper bags eco-friendly and recyclable?<span class="chev">+</span></button><div class="faq-a">Yes. All of our paper bags are 100% recyclable, and most are made from FSC-certified or post-consumer recycled material. Compostable options are also available.</div></div>
+      <div class="faq-item"><button class="faq-q">Can I get a sample before placing a bulk order?<span class="chev">+</span></button><div class="faq-a">Absolutely. We offer free blank samples and low-cost printed samples so you can review paper weight, print quality, and finish before committing.</div></div>
+      <div class="faq-item"><button class="faq-q">What sizes and handle styles can I choose from?<span class="chev">+</span></button><div class="faq-a">We offer 30+ stock sizes and twisted-handle, flat-handle, rope-handle, ribbon-handle, and die-cut options. Fully custom sizes are available on bulk orders.</div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-mark">A</div>
+        <span class="logo-name">APlasticBag</span>
+      </div>
+      <p>Your trusted partner for custom printed paper bags & packaging. Fast, reliable, and built to scale.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="Twitter">x</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Products</h4><ul><li><a href="#">Kraft Bags</a></li><li><a href="#">White Bags</a></li><li><a href="#">Luxury Bags</a></li><li><a href="#">Food Bags</a></li><li><a href="#">Wine Bags</a></li><li><a href="#">Eco Collection</a></li></ul></div>
+    <div class="footer-col"><h4>Resources</h4><ul><li><a href="#">Design Guide</a></li><li><a href="#">Size Chart</a></li><li><a href="#">Print Specs</a></li><li><a href="#">Eco Materials</a></li><li><a href="#">Blog</a></li><li><a href="#">Case Studies</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="#">Wholesale</a></li><li><a href="#">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Support</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Order Status</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Request Samples</a></li><li><a href="#">Get a Quote</a></li></ul></div>
+  </div>
+  <div class="container footer-bottom">
+    <div>© <span id="year"></span> APlasticBag. All rights reserved.</div>
+    <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Accessibility</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
